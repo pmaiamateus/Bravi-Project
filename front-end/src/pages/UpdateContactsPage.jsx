@@ -30,10 +30,13 @@ const UpdateContactsPage = () => {
       setUserUpdated('visible');
     }
   };
+
   useEffect(() => {
-    setDataError('hidden')
-    setUserUpdated('hidden')
-  }, [inputsState]);
+    setTimeout(() => {
+      setDataError('hidden')
+      setUserUpdated('hidden')
+    }, "1500")
+  }, [inputsState,updateButton]);
 
   return (
     <Container className="container">

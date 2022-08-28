@@ -93,6 +93,7 @@ body {
 .card-container {
   flex: auto;
   display: flex-flow;
-  columns: 3;
+  columns: 1;
   margin: auto;
+  column-fill: balance;
 }
