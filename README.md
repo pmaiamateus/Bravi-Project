@@ -105,7 +105,7 @@ Para este projeto, foram utilizados NodeJS com javascript, typescript e react.
 
 ### Banco de dados:
 
-O banco de dados foi conforme o pedido, com todas as colunas podedidas. É possivel, no entanto, adicionar mais colunas que sejam necessárias (não consegui pensar em outras que não fossem links como instagram ou linked-in, por isso não adicionei).
+O banco de dados foi conforme o pedido, com todas as colunas pedidas. É possivel, no entanto, adicionar mais colunas que sejam necessárias (não consegui pensar em outras que não fossem links como instagram ou linked-in, por isso não adicionei).
 
 ### Próximos passos:
 
