@@ -1,0 +1,22 @@
+{
+  "name": "bravi-project-back-end",
+  "version": "0.1.0",
+  "description": "Desafio be3 health tech back-end",
+  "main": "./src/api/server.js",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "engineStrict": true,
+  "private": true,
+  "scripts": {
+    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "start": "node .",
+    "dev": "nodemon .",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json ."
+  },
+  "dependencies": {
+    "joi": "^17.6.0",
+    "sequelize": "^6.21.4",
+    "sequelize-cli": "^6.4.1"
+  }
+}
