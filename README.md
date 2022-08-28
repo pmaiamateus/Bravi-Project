@@ -1,4 +1,4 @@
-# Bem vindos ao Projeto de cadastro de contatos para a empresa Bravi
+# Bem vindos ao Projeto de agenda de contatos para a empresa Bravi
 
 Este projeto foi desenvolvido e destinado para uma vaga de emprego na empresa Bravi para demonstrar conhecimentos de programação e desenvolvimento web.
 
