@@ -1,0 +1,23 @@
+{
+  "name": "bravi-project",
+  "version": "1.0.0",
+  "description": "teste tecnico para Bravi",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "axios": "0.21.1",
+    "dotenv": "^8.2.0",
+    "faker": "5.5.3",
+    "jsonwebtoken": "8.5.1",
+    "moment": "2.29.1",
+    "mysql2": "2.2.5",
+    "puppeteer": "9.1.0",
+    "sequelize": "^6.3.4",
+    "sequelize-cli": "6.2.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}
