@@ -10,7 +10,7 @@ A proposta é desenvolver uma aplicação que armazena e atualiza cadastros de c
 
 Este repositório é o projeto por inteiro, sendo que dentro dele existe a parte do desafio dos suportes balanceados, a parte de back-end e a parte de front-end, tratando tanto da parte cadastrar e atualizar o cadastro, verificando os dados antes de postá-los no banco, quanto a parte de front-end de forma interativa e rápida que possui um formulário para colocar os dados do contato e a comunicação adequada com o banco.
 
-Obs.: Caso tenha algum problema com a comunicação com o banco de dados, o arquivo que trabalha os dados do banco é Bravi-Project/back-end/.env (entendo que é um)
+Obs.: Caso tenha algum problema com a comunicação com o banco de dados, o arquivo que trabalha os dados do banco é Bravi-Project/back-end/.env (entendo que é um problema usar um .env para um projeto desse tipo, porém como não houve um deploy da aplicação para colocar essas variáveis, esse é o método que vi para contornar essa situação).
 
 Sendo assim, foram requisitos do projeto:
 
@@ -31,7 +31,7 @@ Sendo assim, foram requisitos do projeto:
 
 ### Pré-requisitos:
 
-1. MySql2 configurado
+1. MySql2 configurado (sei usar MongoDB para banco de dados não sql, mas preferi usar o sequelize pois acho bem simples de usar)
 2. NPM
 3. gitHub
 4. VSCode ou algum programa similar
@@ -43,7 +43,7 @@ Sendo assim, foram requisitos do projeto:
 
    . git clone https://github.com/pmaiamateus/Bravi-Project.git
 
-   . cd Bravi-project
+   . cd Bravi-project/
 
    . npm install
 
@@ -79,8 +79,7 @@ A partir desse ponto, o banco de dados está ativo, para testá-lo sem o front-e
 
    . npm start
 
-Lembrando que para que a comunicação com o servidor seja feita do site, é necessário que, em outra instância de terminal, o passo 4 de iniciar o back-end seja feito
-    
+Lembrando que para que a comunicação com o servidor seja feita do site, é necessário que, em outra instância de terminal, o passo 4 de iniciar o back-end seja feito.
 
 ## Como utilizar:
 

@@ -1,0 +1,14 @@
+{
+  "name": "bravi-project",
+  "version": "1.0.0",
+  "description": "teste tecnico para Bravi",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "test": "jest --runInBand --forceExit"
+  },
+  "dependencies": {
+    "jest": "^29.0.1"
+  }
+}

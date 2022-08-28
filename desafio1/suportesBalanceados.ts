@@ -12,59 +12,61 @@ const stringToTest1 = "()"; // válido
 const stringToTest2 = "([])"; // válido
 const stringToTest3 = "(){}[]"; // válido
 const stringToTest4 = "[{()}](){}"; // válido
-const stringToTest5 = "[]{()" // inválido
-const stringToTest6 = "[{)]" // inválido
-const stringToTest7 = "(" // inválido
+const stringToTest5 = "[]{()"; // inválido
+const stringToTest6 = "[{)]"; // inválido
+const stringToTest7 = "("; // inválido
 
-const suportesBalanceados = (stringToTest: string) => {
-  const openBrackets = []
-  let counter = 0
-  let verified = false
+const suportesBalanceados = (stringToTest) => {
+  const openBrackets = [];
+  let counter = 0;
+  let verified = false;
   while (counter < stringToTest.length) {
-    verified = true
+    verified = true;
     if (stringToTest[counter] === "(" || stringToTest[counter] === "[" || stringToTest[counter] === "{") {
       openBrackets.push(stringToTest[counter]);
     }
     if (stringToTest[counter] === ")" || stringToTest[counter] === "]" || stringToTest[counter] === "}") {
       if (openBrackets.length === 0) {
-        console.log("string inválida")
-        return null
+        console.log("string inválida");
+        return "string inválida";
       }
       if (stringToTest[counter] === ")") {
         if (openBrackets[openBrackets.length -1] !== "(") {
-          console.log("string inválida")
-          return null
+          console.log("string inválida");
+          return "string inválida";
         }
         else {
-          openBrackets.pop()
+          openBrackets.pop();
         }
       }
       if (stringToTest[counter] === "]") {
         if (openBrackets[openBrackets.length -1] === "[") {
-          openBrackets.pop()
+          openBrackets.pop();
         }
         else {
-          console.log("string inválida")
-          return null
+          console.log("string inválida");
+          return "string inválida";
         }
       }
       if (stringToTest[counter] === "}") {
         if (openBrackets[openBrackets.length -1] === "{") {
-          openBrackets.pop()
+          openBrackets.pop();
         }
         else {
-          console.log("string inválida")
-          return null
+          console.log("string inválida");
+          return "string inválida";
         }
       }
     }
-    counter += 1
+    counter += 1;
   }
   if (openBrackets.length === 0 && verified === true) {
-    console.log("string válida")
+    console.log("string válida");
+    return "string válida";
   }
   else {
-    console.log("string inválida")
+    console.log("string inválida");
+    return "string inválida";
   }
 }
 
@@ -75,3 +77,5 @@ suportesBalanceados(stringToTest4)
 suportesBalanceados(stringToTest5)
 suportesBalanceados(stringToTest6)
 suportesBalanceados(stringToTest7)
+
+module.exports = { suportesBalanceados }
